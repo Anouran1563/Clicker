@@ -36,7 +36,8 @@
             lblCash = new Label();
             btnShop = new Button();
             button1 = new Button();
-            textBox1 = new TextBox();
+            txtLogin = new TextBox();
+            btnLogin = new Button();
             SuspendLayout();
             // 
             // btnAdd
@@ -117,19 +118,30 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += btnShop_ClickEvent;
             // 
-            // textBox1
+            // txtLogin
             // 
-            textBox1.Location = new Point(497, 13);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 25);
-            textBox1.TabIndex = 7;
+            txtLogin.Location = new Point(497, 13);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(100, 25);
+            txtLogin.TabIndex = 7;
+            // 
+            // btnLogin
+            // 
+            btnLogin.Location = new Point(603, 15);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 8;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
+            Controls.Add(btnLogin);
+            Controls.Add(txtLogin);
             Controls.Add(button1);
             Controls.Add(btnShop);
             Controls.Add(lblCash);
@@ -154,6 +166,7 @@
         private Label lblCash;
         private Button btnShop;
         private Button button1;
-        private TextBox textBox1;
+        private TextBox txtLogin;
+        private Button btnLogin;
     }
 }

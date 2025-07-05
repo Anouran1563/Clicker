@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clicker
 {
-    internal class User
+    internal class Player
     {
         public int Multiplyer = 1;
         public int Rank = 1;

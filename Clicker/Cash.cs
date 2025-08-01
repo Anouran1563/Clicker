@@ -8,6 +8,18 @@ namespace Clicker
 {
     internal class Cash
     {
+        public int Balance { get; set; }
 
+        public void Deposit(int amount)
+        {
+            Balance += amount;
+        }
+        public void Withdraw(int amount)
+        {
+            if (amount <= Balance)
+            {
+                Balance -= amount;
+            }
+        }
     }
 }

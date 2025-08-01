@@ -38,6 +38,8 @@
             button1 = new Button();
             txtLogin = new TextBox();
             btnLogin = new Button();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // btnAdd
@@ -74,15 +76,15 @@
             label2.AutoSize = true;
             label2.Location = new Point(632, 206);
             label2.Name = "label2";
-            label2.Size = new Size(151, 17);
+            label2.Size = new Size(160, 17);
             label2.TabIndex = 3;
-            label2.Text = "Click sell to sell your fuel";
+            label2.Text = "Click sell to sell your clicks";
             // 
             // lblCount
             // 
             lblCount.AutoSize = true;
             lblCount.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCount.Location = new Point(12, 51);
+            lblCount.Location = new Point(112, 48);
             lblCount.Name = "lblCount";
             lblCount.Size = new Size(24, 30);
             lblCount.TabIndex = 4;
@@ -92,7 +94,7 @@
             // 
             lblCash.AutoSize = true;
             lblCash.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCash.Location = new Point(12, 98);
+            lblCash.Location = new Point(112, 95);
             lblCash.Name = "lblCash";
             lblCash.Size = new Size(24, 30);
             lblCash.TabIndex = 5;
@@ -135,11 +137,33 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(9, 56);
+            label3.Name = "label3";
+            label3.Size = new Size(87, 20);
+            label3.TabIndex = 9;
+            label3.Text = "Clicks count";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(12, 103);
+            label4.Name = "label4";
+            label4.Size = new Size(40, 20);
+            label4.TabIndex = 9;
+            label4.Text = "Cash";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(label3);
             Controls.Add(btnLogin);
             Controls.Add(txtLogin);
             Controls.Add(button1);
@@ -168,5 +192,7 @@
         private Button button1;
         private TextBox txtLogin;
         private Button btnLogin;
+        private Label label3;
+        private Label label4;
     }
 }
